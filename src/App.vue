@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="container">
-    <CompletedTodos></CompletedTodos>
     <GetTodo></GetTodo>
+    <CompletedTodos></CompletedTodos>
     <CurrentTodos></CurrentTodos>
   </div>
 </template>
