@@ -1,22 +1,22 @@
 <template>
-    <div id="current-todos" class="container">
-        <h3 v-if="todos.length > 0">Current({{todos.length}})</h3>
-        <ul class="list-group">
-            <li class="list-group-item" v-for="(todo, index) in todos" :key="index">
-                {{todo.body}}
-              <div class="btn-group">
-                  <button type="button" @click="edit(todo)" class="btn btn-default btn-sm">
-                  <span class="glyphicon glyphicon-edit"></span> Edit
-                  </button>
-                  <button type="button" @click="complete(todo)" class="btn btn-default btn-sm">
-                  <span class="glyphicon glyphicon-ok-circle"></span> Complete
-                  </button>
-                  <button type="button" @click="remove(todo)" class="btn btn-default btn-sm">
-                  <span class="glyphicon glyphicon-remove-circle"></span> Remove
-                  </button>
-              </div>
-            </li>
-        </ul>
+  <div id="current-todos" class="container">
+    <div class='header' v-if="todos.length > 0">Current todos</div>
+      <ul class="todo-group">
+        <li class="todo" v-for="(todo, index) in todos" :key="index">
+          {{todo.body}}
+          <div class="btn-group">
+            <button type="button" @click="edit(todo)">
+              Edit
+            </button>
+            <button type="button" @click="complete(todo)">
+              Complete
+            </button>
+            <button type="button" @click="remove(todo)">
+              Remove
+            </button>
+          </div>
+        </li>
+      </ul>
     </div>
 </template>
 <script>
@@ -39,8 +39,3 @@ export default{
     }
 }
 </script>
-<style>
-    .btn-group{
-        float: right;
-    }
-</style>
