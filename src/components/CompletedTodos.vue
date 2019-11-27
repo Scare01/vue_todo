@@ -3,7 +3,7 @@
     <div class="header" v-if="completed.length > 0">Completed</div>
     <ul class="todo-group">
       <li class="todo" v-for="(todo, index) in completed" :key="index">
-        {{todo.body}}
+        <div>{{todo.body}}</div>
         <button type="button" @click="remove(todo)">
           Remove
         </button>

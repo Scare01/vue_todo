@@ -42,6 +42,12 @@ export default {
     padding: 10px;
   }
 
+  .todo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   .btn-group{
     float: right;
   }

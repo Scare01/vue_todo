@@ -3,7 +3,7 @@
     <div class='header' v-if="todos.length > 0">Current todos</div>
       <ul class="todo-group">
         <li class="todo" v-for="(todo, index) in todos" :key="index">
-          {{todo.body}}
+          <div>{{todo.body}}</div>
           <div class="btn-group">
             <button type="button" @click="edit(todo)">
               Edit
