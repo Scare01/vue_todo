@@ -49,6 +49,7 @@ export default {
   }
 
   .btn-group{
-    float: right;
+    display: flex;
+    flex-direction: row;
   }
 </style>
